@@ -13,7 +13,7 @@ header > .navbar > .container-fluid {
 
 /* First Section */
 .white-bg {
-  background-image: url(/images/profile\ bg.jpg);
+  background-image: url(./images/profile\ bg.jpg);
 }
 
 .hero > .container-fluid > .row {
@@ -56,7 +56,7 @@ header > .navbar > .container-fluid {
 .coloredSection {
   color: whitesmoke;
   text-align: center;
-  background-image: url(/images/bg-colored.jpg);
+  background-image: url(./images/bg-colored.jpg);
 }
 
 .features > .container-fluid > .row {
@@ -143,7 +143,7 @@ header > .navbar > .container-fluid {
 /* Footer Submit Form */
 
 footer {
-  background-image: url(/images/profile\ bg.jpg);
+  background-image: url(./images/profile\ bg.jpg);
 }
 
 footer > .container-fluid > .row > .contact-list {
