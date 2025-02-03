@@ -1,0 +1,253 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header Navbar */
+header > .navbar > .container-fluid {
+  margin: 1rem;
+}
+
+/* First Section */
+.white-bg {
+  background-image: url(/images/profile\ bg.jpg);
+}
+
+.hero > .container-fluid > .row {
+  align-items: center;
+  padding: 5%;
+}
+
+.hero > .container-fluid > .row > .itm-hero {
+  padding: 4rem 4rem 0 4rem;
+}
+
+.hero > .container-fluid > .row > .itm-hero > .intro {
+  padding: 1.5rem 0 1.5rem 0;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.hero > .container-fluid > .row > .profile {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero > .container-fluid > .row > .itm-hero > .intro-btn > .download-button {
+  margin-right: 1.2rem;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+}
+
+.hero > .container-fluid > .row > .profile > img {
+  width: 39rem;
+  max-width: none; /* Prevent auto-resizing */
+  flex-shrink: 0; /* Ensures image does not shrink */
+  /* transform: translateY(14%); */
+  /* border-radius: 25%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); */
+}
+
+/* Second Section Features */
+.coloredSection {
+  color: whitesmoke;
+  text-align: center;
+  background-image: url(/images/bg-colored.jpg);
+}
+
+.features > .container-fluid > .row {
+  /* padding: 2rem 2rem 3rem 2rem; */
+  padding: 5%;
+}
+
+.features > .container-fluid > .row > .feature-st {
+  padding: 6rem 5rem 8rem 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.features
+  > .container-fluid
+  > .row
+  > .feature-snd
+  > .feature-grid
+  > .rower
+  > .feature {
+  padding: 1rem 2rem 3.5rem;
+}
+
+.fa-3x:hover {
+  transform: rotate(360deg) scale(1.5);
+  transition: transform 0.3s;
+}
+
+.features
+  > .container-fluid
+  > .row
+  > .feature-snd
+  > .feature-grid
+  > .rower
+  > .feature
+  > h3 {
+  padding-top: 1.2rem;
+}
+
+/* Work and Prof Exp */
+
+#thirdSection > .container-fluid > .row {
+  padding: 5%;
+  text-align: center;
+}
+
+#thirdSection > .container-fluid > .row > .heading-third {
+  padding: 6rem 5rem 5rem 5rem;
+}
+
+#thirdSection .carousel .carousel-inner .container-fluid .skill-img {
+  border-radius: 100%;
+  margin-top: 0.5rem;
+  width: 12rem;
+}
+
+#thirdSection .carousel .carousel-inner .container-fluid .role-pos {
+  margin-bottom: 5rem;
+  padding: 0 16%;
+  align-items: center;
+}
+
+#thirdSection .carousel .carousel-inner .container-fluid .role-res {
+  text-align: justify;
+}
+
+/* Download Section */
+#lastSection > .container-fluid > .row {
+  padding: 5%;
+}
+
+#lastSection > .container-fluid > .row > .download-here {
+  padding: 4% 0 5% 0;
+}
+
+#lastSection > .container-fluid > .row > .link-dl {
+  margin: 0.8rem;
+}
+
+#lastSection > .container-fluid > .row > .link-dl > a {
+  margin: 0.8rem;
+}
+
+/* Footer Submit Form */
+
+footer {
+  background-image: url(/images/profile\ bg.jpg);
+}
+
+footer > .container-fluid > .row > .contact-list {
+  padding: 5%;
+}
+
+footer > .container-fluid > .row {
+  align-items: center;
+}
+
+footer .copyRight {
+  padding-left: 1.2%;
+  padding-top: 2%;
+  margin: 0;
+}
+
+footer > .container-fluid > .row > .contact-list > .inside-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer
+  > .container-fluid
+  > .row
+  > .contact-list
+  > .inside-list
+  > a
+  > .social-icon {
+  font-size: 1.5rem;
+  /* padding: 0 0.6rem; */
+}
+
+#footer .gmail-mail {
+  color: #aa2b1d;
+}
+
+#footer .viber-chat {
+  color: #845ec2;
+}
+
+#footer .linkedIn {
+  color: #0072b1;
+}
+
+#footer .skype {
+  color: #00aff0;
+}
+
+#footer .skype {
+  color: #00aff0;
+}
+
+#footer .game-proj {
+  color: #34A853;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+footer .copyRight {
+  padding-top: 0.3rem;
+  /* font-size: 0.7rem; */
+}
+
+footer > .container-fluid > .row > .sub-form {
+  padding-top: 1.8%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin: auto;
+  padding-bottom: 3%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 2%;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 858px) {
+  .profile > img {
+    width: 26rem;
+  }
+}
