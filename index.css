@@ -214,40 +214,289 @@ footer > .container-fluid > .row > .sub-form {
   padding-top: 1.8%;
 }
 
+/* General Form Styles */
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 60%;
-  margin: auto;
-  padding-bottom: 3%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 8px;
-  margin: 5px 0;
+  padding: 10px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
 }
 
 .contact-form button {
+  width: 100%;
+  padding: 10px;
   background-color: #007bff;
   color: white;
-  padding: 10px;
   border: none;
-  cursor: pointer;
   border-radius: 5px;
-  margin-top: 2%;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .contact-form button:hover {
   background-color: #0056b3;
 }
 
-/* Media Queries */
-@media (max-width: 858px) {
-  .profile > img {
-    width: 26rem;
+.contact-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Response Message */
+#responseMessage {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Initially Hidden */
+.hidden {
+  display: none;
+}
+
+/* Responsive Design */
+
+/* Extra Small Devices (Phones: <576px) */
+@media (max-width: 575px) {
+  .hero > .container-fluid > .row {
+    text-align: center;
+    padding: 1.4%;
+  }
+
+  .hero > .container-fluid > .row > .itm-hero {
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  .hero > .container-fluid > .row > .itm-hero > .intro {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+
+  .hero > .container-fluid > .row > .itm-hero > .intro-btn {
+    text-align: justify;
+  }
+
+  .hero > .container-fluid > .row > .itm-hero > .intro-btn > .download-button {
+    margin-right: 0.6rem;
+    margin-bottom: 0.8rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+  }
+
+  .hero > .container-fluid > .row > .profile > img {
+    width: 22rem;
+  }
+
+  .features > .container-fluid > .row {
+    padding: 2%;
+  }
+
+  .features > .container-fluid > .row > .feature-st {
+    padding: 3rem 2.4rem 3.4rem 2.4rem;
+  }
+
+  .features > .container-fluid > .row > .feature-st > .skil-achieve > p {
+    font-size: 0.8rem;
+  }
+
+  .features
+    > .container-fluid
+    > .row
+    > .feature-snd
+    > .feature-grid
+    > .rower
+    > .feature {
+    padding: 0.5rem 1rem 1.75rem;
+  }
+
+  .features
+    > .container-fluid
+    > .row
+    > .feature-snd
+    > .feature-grid
+    > .rower
+    > .feature
+    > h3 {
+    padding-top: 0.5rem;
+    font-size: 1.3rem;
+  }
+
+  .features
+    > .container-fluid
+    > .row
+    > .feature-snd
+    > .feature-grid
+    > .rower
+    > .feature
+    > .fa-3x {
+    font-size: 2.2rem;
+  }
+
+  .features
+    > .container-fluid
+    > .row
+    > .feature-snd
+    > .feature-grid
+    > .rower
+    > .feature
+    > p {
+    padding-top: 0.2rem;
+    font-size: 0.8rem;
+  }
+
+  #thirdSection > .container-fluid > .row {
+    padding: 2%;
+  }
+
+  #thirdSection > .container-fluid > .row > .heading-third {
+    padding: 3rem 2.5rem 2.5rem 2.5rem;
+  }
+
+  #thirdSection > .container-fluid > .row > .heading-third > p {
+    font-size: 1rem;
+  }
+
+  #thirdSection .carousel .carousel-inner .container-fluid .skill-img {
+    border-radius: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 12px;
+    width: 8rem;
+  }
+
+  #thirdSection .carousel .carousel-inner .container-fluid .role-pos {
+    margin-bottom: 3rem;
+    padding: 0 6%;
+  }
+
+  #thirdSection
+    .carousel
+    .carousel-inner
+    .container-fluid
+    .role-pos
+    > div
+    > h4 {
+    font-size: 1.3rem;
+  }
+
+  #thirdSection
+    .carousel
+    .carousel-inner
+    .container-fluid
+    .role-pos
+    > div
+    > h5 {
+    font-size: 1rem;
+  }
+
+  #thirdSection .carousel .carousel-inner .container-fluid .role-res {
+    text-align: start;
+  }
+
+  #thirdSection .carousel .carousel-inner .container-fluid .role-res > h3 {
+    font-size: 1.4rem;
+  }
+
+  #thirdSection .carousel .carousel-inner .container-fluid .role-res > h4 {
+    font-size: 1.2rem;
+  }
+
+  #thirdSection .carousel .carousel-inner .container-fluid .role-res > h5 {
+    font-size: 1rem;
+  }
+
+  #thirdSection .carousel .carousel-inner .container-fluid .role-res > ul {
+    font-size: 0.8rem;
+  }
+
+  #lastSection > .container-fluid > .row > .download-here {
+    padding: 4% 0 5% 0;
+  }
+
+  #lastSection > .container-fluid > .row > .link-dl {
+    margin: 0;
+  }
+
+  #lastSection > .container-fluid > .row > .link-dl > a {
+    margin: 0.4rem;
+    font-size: 1rem;
+  }
+
+  footer > .container-fluid > .row > .contact-list > .inside-list > a {
+    font-size: 0.8rem;
+  }
+
+  .contact-form {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .contact-form button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+/* Small Devices (Tablets: 576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .hero > .container-fluid > .row > .profile > img {
+    width: 32rem;
+  }
+
+  .contact-form {
+    max-width: 80%;
+  }
+}
+
+/* Medium Devices (Small Laptops: 768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-form {
+    max-width: 70%;
+  }
+}
+
+/* Large Devices (Desktops: 992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact-form {
+    max-width: 60%;
+  }
+}
+
+/* Extra Large Devices (Big Screens: 1200px+) */
+@media (min-width: 1200px) {
+  .contact-form {
+    max-width: 500px; /* Default size */
   }
 }
