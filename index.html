@@ -492,17 +492,21 @@
 
           <div class="sub-form col-xxl-6 col-xl-6 col-lg-6 col-md-6">
             <h2>Contact Me</h2>
-            <form
+               <form
+              id="contactForm"
               action="https://formsubmit.co/lowendoongle@gmail.com"
               method="POST"
               class="contact-form"
             >
               <input type="hidden" name="_captcha" value="false" />
+              <!-- Disables CAPTCHA -->
+              <input type="hidden" name="_template" value="table" />
+              <!-- Formats the email nicely -->
 
-              <label for="name">Full Name:</label>
+              <label for="name">Name:</label>
               <input type="text" id="name" name="name" required />
 
-              <label for="email">Your Email:</label>
+              <label for="email">Email:</label>
               <input type="email" id="email" name="email" required />
 
               <label for="message">Message:</label>
@@ -513,7 +517,10 @@
                 required
               ></textarea>
 
-              <button type="submit">Send</button>
+              <button type="submit" id="submitButton">Send</button>
+
+              <!-- Loading & Response Message -->
+              <p id="responseMessage" class="hidden"></p>
             </form>
           </div>
         </div>
