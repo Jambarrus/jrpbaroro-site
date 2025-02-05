@@ -264,6 +264,12 @@ footer > .container-fluid > .row > .sub-form {
   cursor: not-allowed;
 }
 
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
 /* Response Message */
 #responseMessage {
   margin-top: 10px;
