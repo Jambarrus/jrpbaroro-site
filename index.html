@@ -492,34 +492,46 @@
 
           <div class="sub-form col-xxl-6 col-xl-6 col-lg-6 col-md-6">
             <h2>Contact Me</h2>
-               <form
+             form
               id="contactForm"
               action="https://formsubmit.co/lowendoongle@gmail.com"
               method="POST"
               class="contact-form"
             >
+              <!-- Honeypot Field (Hidden) -->
+              <input type="text" name="_honey" style="display: none" />
+              <!-- Disable Captcha -->
               <input type="hidden" name="_captcha" value="false" />
-              <!-- Disables CAPTCHA -->
-              <input type="hidden" name="_template" value="table" />
-              <!-- Formats the email nicely -->
 
-              <label for="name">Name:</label>
+              <!-- Name -->
+              <label for="name">Full Name</label>
               <input type="text" id="name" name="name" required />
+              <small id="nameError" class="error-message"></small>
 
-              <label for="email">Email:</label>
+              <!-- Company Name -->
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company" />
+              <small id="companyError" class="error-message"></small>
+
+              <!-- Email -->
+              <label for="email">Your Email</label>
               <input type="email" id="email" name="email" required />
+              <small id="emailError" class="error-message"></small>
 
-              <label for="message">Message:</label>
+              <!-- Message -->
+              <label for="message">Message</label>
               <textarea
                 id="message"
                 name="message"
                 rows="4"
                 required
               ></textarea>
+              <small id="messageError" class="error-message"></small>
 
-              <button type="submit" id="submitButton">Send</button>
+              <!-- Submit Button -->
+              <button type="submit" id="submitBtn">Send</button>
 
-              <!-- Loading & Response Message -->
+              <!-- Response Message -->
               <p id="responseMessage" class="hidden"></p>
             </form>
           </div>
