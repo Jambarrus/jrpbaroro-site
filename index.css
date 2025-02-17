@@ -210,9 +210,17 @@ footer .copyRight {
   /* font-size: 0.7rem; */
 }
 
+footer .viewCnt {
+  padding-left: 1.2%;
+  padding-top: 2px;
+  padding-bottom: 0.2rem;
+  margin: 0;
+}
+
 footer > .container-fluid > .row > .sub-form {
   padding-top: 1.8%;
 }
+
 
 /* General Form Styles */
 .contact-form {
